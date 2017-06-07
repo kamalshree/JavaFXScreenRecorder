@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="ap" prefHeight="424.0" prefWidth="394.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.kamal.screenrecorder.ScreenRecorderController">
+   <children>
+      <ImageView fx:id="display" fitHeight="330.0" fitWidth="394.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="79.0" layoutY="379.0" mnemonicParsing="false" onAction="#captureScreen" style="-fx-background-color: green;" text="Capture" />
+      <Button layoutX="177.0" layoutY="379.0" mnemonicParsing="false" onAction="#saveScreen" style="-fx-background-color: green;" text="Save" />
+      <Button layoutX="259.0" layoutY="379.0" mnemonicParsing="false" onAction="#clearScreen" style="-fx-background-color: green;" text="Clear" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="62.0" layoutY="4.0" prefHeight="38.0" prefWidth="285.0" text="Screen Recorder" textAlignment="CENTER" textFill="#e60f0f" wrapText="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
